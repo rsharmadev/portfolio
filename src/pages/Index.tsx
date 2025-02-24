@@ -93,14 +93,14 @@ const Index = () => {
             <TypeAnimation
               sequence={[
                 1500, // Waits 0.5 seconds
-                'Software Developer',
-                750, // Waits 1 second
+                'Software Dev',
+                400, // Waits 1 second
                 'Software Engineer'
               ]}
               wrapper="span"
               cursor={true}
               speed={50}
-              deletionSpeed={4}
+              deletionSpeed={{type: 'keyStrokeDelayInMs', value: 400}}
               style={{ display: 'inline-block' }}
               />
           </p>
